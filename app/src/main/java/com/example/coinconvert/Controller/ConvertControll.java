@@ -41,13 +41,8 @@ public class ConvertControll {
 
         valueList.putString("value: ", value.getValue());
         valueList.apply();
-
-    }
-
-
-    public void Search(Value value) {
-
         value.setResult(preferences.getString("value: ", "NA"));
 
     }
+
 }

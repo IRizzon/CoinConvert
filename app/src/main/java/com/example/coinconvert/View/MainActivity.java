@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 idValue.setText("");
+                idResult.setText("");
                 controll.Clear(value);
 
             }
@@ -55,7 +56,8 @@ public class MainActivity extends AppCompatActivity {
 
                 value.setValue(idValue.getText().toString());
                 controll.Convert(value);
-                controll.Search(value);
+                idResult.setText(value.getResult());
+                idValue.setText("");
 
             }
         });
